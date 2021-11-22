@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 10px
 }
 
 code {
@@ -23,3 +24,47 @@ code {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.wcaps-logo-large {
+  width: 20%;
+}
+
+#posts-area {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#posts-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filter-controls-form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#posts-area {
+}
+
+.post {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+}
+
+.post-header, .post-content, .post-options {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.comment-button, .report-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
