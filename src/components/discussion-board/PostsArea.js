@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default function DiscussionBoard() {
+export default function PostsArea() {
     const [posts,setPosts] = useState([]);
 
     useEffect(() => {
@@ -9,7 +9,7 @@ export default function DiscussionBoard() {
 
     return (
         <div>
-            Discussion Board {/* placeholder */}
+            Posts Area {/* placeholder */}
             {/* posts area */}
         </div>
     )
