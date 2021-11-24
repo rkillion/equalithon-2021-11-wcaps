@@ -19,6 +19,7 @@ export default function PostsArea() {
                 },
                 title: "First Post",
                 text: "This is an example of a post!",
+                comments: [],
                 created_at: dateOne,
                 updated_at: dateOne
             },
@@ -30,6 +31,7 @@ export default function PostsArea() {
                 },
                 title: "Second Post",
                 text: "Vision! Empowerment! Perserverance! Unity!",
+                comments: [],
                 created_at: dateTwo,
                 updated_at: dateTwo
             },
@@ -41,6 +43,19 @@ export default function PostsArea() {
                 },
                 title: "Hello everyone",
                 text: "I'm new to the forum and happy to be here!",
+                comments: [
+                    {
+                        id: 4,
+                        user: {
+                            id: 2,
+                            username: "sampleUser"
+                        },
+                        title: null,
+                        text: "Welcome! Great to have you with us.",
+                        created_at: dateThree,
+                        updated_at: dateThree
+                    }
+                ],
                 created_at: dateThree,
                 updated_at: dateThree
             }
