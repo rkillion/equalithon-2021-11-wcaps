@@ -37,7 +37,11 @@ export default function AuthenticatedApp({ user }) {
                     <ComposeArea user={user} addPost={addPost}/>
                     <PostsArea posts={posts} user={user} editPost={editPost}/>
                 </div>
-                <HighlightsArea />
+                <HighlightsArea 
+                    highlights={posts.filter(post=>post.highlight)}
+                    user={user}
+                    editPost={editPost}
+                />
             </div>
         </div>
     )

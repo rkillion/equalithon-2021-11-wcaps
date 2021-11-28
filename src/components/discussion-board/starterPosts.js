@@ -23,6 +23,7 @@ export function starterPosts() {
                 },
                 title: "Second Post",
                 text: "Vision! Empowerment! Perserverance! Unity!",
+                highlight: true,
                 comments: [],
                 created_at: dateTwo,
                 updated_at: dateTwo
