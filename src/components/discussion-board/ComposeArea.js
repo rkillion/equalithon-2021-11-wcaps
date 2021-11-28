@@ -52,6 +52,7 @@ export default function ComposeArea({ user, addPost }) {
                     name="text"
                     placeholder="What's on your mind?" />
                 <button
+                    id="compose-submit-button"
                     type="submit"
                 >
                     Post
