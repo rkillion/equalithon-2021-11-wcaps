@@ -21,6 +21,13 @@ export default function AuthenticatedApp({ user }) {
         setPosts([...posts,postToAdd].sort((a,b)=>b.created_at-a.created_at))
     }
 
+    function editPost(newPost) {
+        const replacementPost = {...newPost};
+        const filteredPostList = [...posts].filter(post=>post.id!==newPost.id);
+        const newPostList = [...filteredPostList,replacementPost];
+        setPosts(newPostList.sort((a,b)=>b.created_at-a.created_at));
+    }
+
     return (
         <div id="authenticated-app-page" className="whole-page">
             <Navbar />
@@ -28,7 +35,7 @@ export default function AuthenticatedApp({ user }) {
             <div id="discussion-board-and-highlights">
                 <div id="discussion-board">
                     <ComposeArea user={user} addPost={addPost}/>
-                    <PostsArea posts={posts}/>
+                    <PostsArea posts={posts} user={user} editPost={editPost}/>
                 </div>
                 <HighlightsArea />
             </div>

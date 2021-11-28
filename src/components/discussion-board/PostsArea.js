@@ -3,7 +3,7 @@ import FilterControls from "./FilterControls";
 import Post from "./Post";
 import { starterPosts } from "./starterPosts";
 
-export default function PostsArea({ posts }) {
+export default function PostsArea({ posts, user, editPost }) {
 
     return (
         <div id="posts-area">
@@ -12,7 +12,7 @@ export default function PostsArea({ posts }) {
                 <FilterControls />  
             </div>
             {posts.length===0 ? null : posts.map(post=>{
-                return <Post key={post.id} post={post}/>
+                return <Post key={post.id} post={post} user={user} editPost={editPost}/>
             })}
         </div>
     )
