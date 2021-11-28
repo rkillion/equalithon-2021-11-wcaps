@@ -28,6 +28,29 @@ code {
   width: 20%;
 }
 
+#discussion-board-and-highlights {
+  display: flex;
+  flex-direction: row;
+}
+
+#discussion-board {
+  width: 60%
+}
+
+#compose-area {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#compose-form {
+  width: 90%;
+}
+#compose-text {
+	width: 100%;
+}
+
 #posts-area {
   display: flex;
   flex-direction: column;
@@ -71,5 +94,17 @@ code {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+#highlights-area {
+  width: 40%
+}
+
+#highlights-list {
+
+}
+
+.card {
+	border: 2px solid blue;
 }
 

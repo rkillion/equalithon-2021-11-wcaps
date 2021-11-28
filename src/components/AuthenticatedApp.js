@@ -8,10 +8,14 @@ export default function AuthenticatedApp({ user }) {
     return (
         <div id="authenticated-app-page" className="whole-page">
             <Navbar />
-            <CommunityPageHeader />
-            <ComposeArea />
-            <HighlightsArea />
-            <PostsArea />
+            {/* <CommunityPageHeader /> */}
+            <div id="discussion-board-and-highlights">
+                <div id="discussion-board">
+                    <ComposeArea />
+                    <PostsArea />
+                </div>
+                <HighlightsArea />
+            </div>
         </div>
     )
 }

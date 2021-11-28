@@ -1,4 +1,3 @@
-import "./HighlightsArea.css";
 import Events from "./Events";
 import PinnedPost from "./PinnedPost";
 import Trending from "./Trending";
@@ -7,8 +6,8 @@ import Polls from "./Polls";
 export default function HighlightsArea() {
   return (
     <div id="highlights-area">
-    	<h2> Highlights Area</h2>
-			<div class="highlightsLine">
+    	<h2 id="highlights-header">Highlights</h2>
+		<div id="highlights-list">
 
 				<div class="card">
 					<Events />
