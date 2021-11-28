@@ -10,10 +10,10 @@ export default function Login() {
             <h1> Sign In </h1>
 
               <form>
-                  <label for="email"><b>Email Address</b></label>
+                  <label htmlFor="email"><b>Email Address</b></label>
                   <input type="text" name="email" required />
 
-                  <label for="psw"><b>Password</b></label>
+                  <label htmlFor="psw"><b>Password</b></label>
                   <input type="password" name="psw" required />
                   <input type="submit" />
               </form>
