@@ -55,14 +55,24 @@ code {
 }
 
 #compose-form {
-  width: 95%;
-  padding: 10px;
-
+  width: 90%;
+  /* padding: 10px; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #compose-text {
-	width: 100%;
+	width: 70%;
   border: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#compose-title {
+  width: 30%;
 }
 
 #posts-area {
