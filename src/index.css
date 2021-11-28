@@ -31,10 +31,12 @@ code {
 #discussion-board-and-highlights {
   display: flex;
   flex-direction: row;
+  background-color: #F1BC7C;
 }
 
 #discussion-board {
-  width: 60%
+  width: 60%;
+  padding: 3rem;
 }
 
 #compose-area {
@@ -42,13 +44,35 @@ code {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#compose-area svg {
+  width: 5%;
 }
 
 #compose-form {
   width: 90%;
+  /* padding: 10px; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 #compose-text {
-	width: 100%;
+	width: 70%;
+  border: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#compose-title {
+  width: 30%;
 }
 
 #posts-area {
@@ -75,13 +99,65 @@ code {
 .post {
   display: flex;
   flex-flow: column nowrap;
-  border: 1px solid black;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
-.post-header, .post-content, .post-options {
+.post-header, .post-content {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
+}
+
+.post-options {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.post-options button{
+  background-color: #fff;
+  border: none;
+  padding: 0px;
+  margin-right: 20px;
+}
+
+.post-options svg{
+  color: #6F4F47;
+}
+
+.post-options span{
+  margin-left: 5px;
+  color: #6F4F47;
+}
+
+.photo-and-title {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.post-title {
+  margin-left: 10px;
+  color: #6F4F47;
+  margin-block-end: 0.5em;
+  margin-block-start: 0.5em;
+}
+
+.post-date {
+  text-align: right;
+  font-size: 12px;
+  color: grey;
+}
+
+.post-content {
+  color: #6F4F47;
+  margin-block-end: 0.5em;
+  margin-left: 0px;
 }
 
 .comment-button, .report-button {
@@ -108,3 +184,6 @@ code {
 	border: 2px solid blue;
 }
 
+h2{
+  color: #fff;
+}
